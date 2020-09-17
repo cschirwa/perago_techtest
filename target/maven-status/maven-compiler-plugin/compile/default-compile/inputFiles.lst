@@ -1,0 +1,11 @@
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/service/NodeService.java
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/entity/InnerNode.java
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/entity/NodeStatus.java
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/entity/Node.java
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/DiffException.java
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/entity/Diff.java
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/service/DiffRenderService.java
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/service/DiffService.java
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/DiffRenderer.java
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/entity/LeafNode.java
+/Users/calvin/github/technical-test/src/main/java/xyz/foobar/DiffEngine.java

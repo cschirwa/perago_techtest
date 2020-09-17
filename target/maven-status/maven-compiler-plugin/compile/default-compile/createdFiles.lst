@@ -1,0 +1,11 @@
+xyz/foobar/service/DiffService.class
+xyz/foobar/entity/NodeStatus.class
+xyz/foobar/DiffException.class
+xyz/foobar/service/DiffRenderService.class
+xyz/foobar/DiffRenderer.class
+xyz/foobar/entity/Node.class
+xyz/foobar/entity/Diff.class
+xyz/foobar/entity/LeafNode.class
+xyz/foobar/entity/InnerNode.class
+xyz/foobar/DiffEngine.class
+xyz/foobar/service/NodeService.class
