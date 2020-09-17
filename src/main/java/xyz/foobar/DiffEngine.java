@@ -2,6 +2,8 @@ package xyz.foobar;
 
 import java.io.Serializable;
 
+import xyz.foobar.entity.Diff;
+
 /**
  * The Diff Engine that can calculate and apply differences between objects.
  * 
@@ -27,6 +29,8 @@ public interface DiffEngine {
 	 * @param modified The final / modified Object
 	 * @return The {@link Diff} calculated between the original and modified
 	 * @throws DiffException when something goes wrong whilst calculating the diff
+	 * @throws IllegalAccessException 
+	 * @throws IllegalArgumentException 
 	 */
-	<T extends Serializable> Diff<T> calculate(T original, T modified) throws DiffException;
+	<T extends Serializable> Diff<T> calculate(T original, T modified) throws DiffException, IllegalArgumentException, IllegalAccessException;
 }

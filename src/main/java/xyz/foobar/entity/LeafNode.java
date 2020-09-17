@@ -2,24 +2,22 @@ package xyz.foobar.entity;
 
 public class LeafNode extends Node{
 
-	private Object preValue;
+	private Object original;
 	
-	private Object postValue;
+	private Object modified;
 	
 	public LeafNode() {}
 	
-	public LeafNode(Object key, String name, Object preValue, Object postValue) {
-		super(key, name, NodeStatus.UPDATED);
-		this.preValue = preValue;
-		this.postValue = postValue;
+	public LeafNode(Object original, Object modified) {
+		this.original = original;
+		this.modified = modified;
 	}
 	
-	public Object getPreValue() {
-		return preValue;
+	public Object getOriginal() {
+		return original;
 	}
-	
-	public Object getPostValue() {
-		return postValue;
+	public Object getModified() {
+		return modified;
 	}
 	
 }

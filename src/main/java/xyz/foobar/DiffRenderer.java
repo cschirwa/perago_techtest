@@ -1,5 +1,7 @@
 package xyz.foobar;
 
+import xyz.foobar.entity.Diff;
+
 /**
  * Your diff rendering service must implement this interface
  *

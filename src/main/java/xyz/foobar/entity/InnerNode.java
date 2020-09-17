@@ -1,31 +1,37 @@
 package xyz.foobar.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class InnerNode<T> extends Node {
+public class InnerNode extends Node {
 
-	private Class type;
+	private List<InnerNode> innerNodes;
 	
 	private List<LeafNode> leafNodes;
 	
-	private List<InnerNode> innerNodes;
-	
 	public InnerNode() {}
 	
-	public InnerNode(Object key, String name, Class type) {
-		super(key, name, NodeStatus.UPDATED);
+	public InnerNode(String name, String value, NodeStatus status) {
+		super(name, value, status);
+		this.innerNodes = new ArrayList<>();
+		this.leafNodes = new ArrayList<>();
 	}
 	
-	
-	public Class getType() {
-		return type;
+	public InnerNode(String name, String value, NodeStatus status, List<InnerNode> innerNode, List<LeafNode> leafNode) {
+		super(name, value, status);
+		this.innerNodes = innerNode;
+		this.leafNodes = leafNode;
 	}
 	
-	public List<LeafNode> getLeafNodes() {
-		return leafNodes;
+	public boolean isEmpty() {
+		return leafNodes.isEmpty() && innerNodes.isEmpty();
 	}
 	
 	public List<InnerNode> getInnerNodes() {
 		return innerNodes;
+	}
+	
+	public List<LeafNode> getLeafNodes() {
+		return leafNodes;
 	}
 }
