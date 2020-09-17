@@ -11,14 +11,14 @@ public class InnerNode extends Node {
 	
 	public InnerNode() {}
 	
-	public InnerNode(String name, String value, NodeStatus status) {
-		super(name, value, status);
+	public InnerNode(String value, NodeStatus status) {
+		super(value, status);
 		this.innerNodes = new ArrayList<>();
 		this.leafNodes = new ArrayList<>();
 	}
 	
 	public InnerNode(String name, String value, NodeStatus status, List<InnerNode> innerNode, List<LeafNode> leafNode) {
-		super(name, value, status);
+		super(value, status);
 		this.innerNodes = innerNode;
 		this.leafNodes = leafNode;
 	}

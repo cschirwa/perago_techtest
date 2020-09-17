@@ -95,4 +95,12 @@ public class Person implements Serializable {
 			return false;
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Person [firstName=" + firstName + ", surname=" + surname + ", friend=" + friend + ", pet=" + pet
+				+ ", nickNames=" + nickNames + "]";
+	}
+	
+	
 }

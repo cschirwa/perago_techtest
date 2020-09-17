@@ -56,4 +56,11 @@ public class Pet implements Serializable {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "Pet [type=" + type + ", name=" + name + "]";
+	}
+	
+	
+
 }
