@@ -10,6 +10,9 @@ public class DiffRenderService implements DiffRenderer{
 	@Override
 	public String render(Diff<?> diff) throws DiffException {
 		
+		if(diff==null)
+			throw new DiffException("Cannot render null diff");
+		
 		InnerNode node = diff.getRoot();
 		StringBuilder response = new StringBuilder();
 		response.append("1 " + node.getStatus().getDescription() + ": " + node.getValue() + "\n");
