@@ -3,11 +3,7 @@ package xyz.foobar.service;
 import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
-import org.apache.commons.lang3.ClassUtils;
-import org.apache.commons.lang3.SerializationUtils;
 
 import xyz.foobar.DiffEngine;
 import xyz.foobar.DiffException;
@@ -16,7 +12,7 @@ import xyz.foobar.entity.InnerNode;
 import xyz.foobar.entity.LeafNode;
 import xyz.foobar.entity.NodeStatus;
 
-public class DiffService implements DiffEngine, Serializable {
+public class DiffService implements DiffEngine {
 
 	public <T extends Serializable> T apply(T original, Diff<?> diff) throws DiffException {
 		T result = null;

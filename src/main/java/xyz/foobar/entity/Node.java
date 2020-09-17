@@ -19,10 +19,4 @@ public abstract class Node {
 	public NodeStatus getStatus() {
 		return status;
 	}
-//	public void setValue(String value) {
-//		this.value = value;
-//	}
-//	public void setStatus(NodeStatus status) {
-//		this.status = status;
-//	}
 }
